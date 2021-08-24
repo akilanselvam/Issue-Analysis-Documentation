@@ -8,10 +8,18 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 
+
+
 import java.time.Instant;
 
 import static javax.persistence.FetchType.LAZY;
 import static javax.persistence.GenerationType.IDENTITY;
+
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
 public class Comment {
 	@Id
     @GeneratedValue(strategy = IDENTITY)

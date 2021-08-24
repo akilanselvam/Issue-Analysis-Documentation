@@ -20,7 +20,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Entity
 @Builder
 public
-class SubIssue {
+class subissue {
 	@Id
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
